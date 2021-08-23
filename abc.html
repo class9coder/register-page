@@ -1,0 +1,64 @@
+<head>
+<title> My Form </title>
+<link rel="stylesheet" href="C:\Users\LENOVO\Desktop\Vaibhav\html homworks\forms in html\abc login page\abc.css">
+<style>
+.button {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px white;
+}
+.button:hover {background-color: red}
+.button:active {
+  background-color: red;
+  box-shadow: 0 5px  white;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body bgcolor = "lightyellow">
+<h1> My Registration Page </h1>
+<form action="#0">
+
+  <div>
+    <input type="text" id="first_name" name="first_name" required placeholder=" " />
+    <label for="first_name">First Name</label>
+  </div>
+<br><br>
+  
+  <div>
+    <input type="text" id="last_name" name="last_name" required placeholder=" " />
+    <label for="last_name">Last Name</label>
+  </div>
+<br><br>
+  
+  <div>
+    <input type="email" id="email" name="email" required placeholder=" " />
+    <label for="email">Email Address</label>
+    <div class="requirements">
+      Must be a valid email address.
+    </div>
+  </div>
+<br><br>
+  
+  <div>
+    <input type="password" id="password" name="password" required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
+    <label for="password">Password</label>
+    <div class="requirements">
+      Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+    </div>
+  </div>
+<br><br>
+  
+  <button class="button"> Sign Up</button>
+
+</form>
+</body>
